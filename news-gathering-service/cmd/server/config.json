@@ -1,0 +1,19 @@
+{
+    "rss":[
+       "https://habr.com/ru/rss/hub/go/all/?fl=ru",
+       "https://habr.com/ru/rss/best/daily/?fl=ru",
+       "https://cprss.s3.amazonaws.com/golangweekly.com.xml",
+       "https://go.dev/blog/feed.atom?format=xml",
+       "https://blog.jetbrains.com/go/feed/"
+    ],
+    "request_period": 1,
+
+    "db": {
+        "host": "localhost",
+        "user": "postgres",
+        "password": "qwerty",
+        "dbname": "news-gathering-service",
+        "port": "5432",
+        "sslmode": "disable"
+     }
+ }
