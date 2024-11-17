@@ -28,6 +28,10 @@ func New(connstr string) (*Store, error) {
 	return &s, nil
 }
 
+func (s *Store) Close() {
+	s.db.Close()
+}
+
 // Загружает в БД посты
 func (s *Store) CreatePosts(posts []models.Post) error {
 	for _, p := range posts {

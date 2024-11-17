@@ -41,6 +41,8 @@ func main() {
 		log.Fatal(err.Error())
 	}
 
+	defer db.Close()
+
 	api := api.New(db)
 
 	chanPosts := make(chan []models.Post)
